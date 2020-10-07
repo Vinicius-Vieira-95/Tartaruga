@@ -1,5 +1,7 @@
 package personagem;
 
+import exception.MovimentoInvalidoException;
+
 public class Robo {
 
 	private int posicaoX;
@@ -8,8 +10,8 @@ public class Robo {
 	
 	public Robo(String cor) {
 		this.cor = cor;
-		posicaoX = 3;
-		posicaoY = 4;
+		posicaoX = 0;
+		posicaoY = 0;
 	}
 
 	public int getPosicaoX() {
@@ -29,6 +31,25 @@ public class Robo {
 		return "Cor: "+cor +" :" + posicaoX + ":" + posicaoY;
 	}
 	
+	public void moverRobor(String comando) throws MovimentoInvalidoException {
+		
+		if(comando.equalsIgnoreCase("UP")) {
+			this.posicaoY =  posicaoY + 1; 
+		}
+		if(comando.equalsIgnoreCase("DOWN")) {
+			this.posicaoY = posicaoY -1;
+		}
+		if(comando.equalsIgnoreCase("RIGHT")) {
+			this.posicaoX = posicaoX + 1;
+		}
+		if(comando.equalsIgnoreCase("LEFT")) {
+			this.posicaoX = posicaoX -1;
+		}
+		if(posicaoX < 0 || posicaoX > 10 || posicaoY < 0 || posicaoY > 10) {
+			throw new MovimentoInvalidoException("Personagem fora do campo da arena");
+		}
+		
+	}
 	
 
 }
