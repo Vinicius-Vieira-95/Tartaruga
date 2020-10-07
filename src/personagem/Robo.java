@@ -8,8 +8,8 @@ public class Robo {
 	
 	public Robo(String cor) {
 		this.cor = cor;
-		posicaoX = 0;
-		posicaoY = 0;
+		posicaoX = 3;
+		posicaoY = 4;
 	}
 
 	public int getPosicaoX() {
