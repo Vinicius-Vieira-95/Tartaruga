@@ -1,9 +1,11 @@
 package exception;
 
-public class MovimentoInvalidoException {
+public class MovimentoInvalidoException extends RuntimeException{
 
-	public MovimentoInvalidoException() {
-		// TODO Auto-generated constructor stub
+	private static final long serialVersionUID = 1L;
+
+	public MovimentoInvalidoException(String msg) {
+		super(msg);
 	}
 
 }
