@@ -51,5 +51,11 @@ public class Robo {
 		
 	}
 	
+	public void posicaoDoAlimento(int x, int y) {
+		
+		
+		
+	}
+	
 
 }

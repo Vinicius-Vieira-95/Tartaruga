@@ -8,6 +8,7 @@ public class Program {
 
 		Robo robo = new Robo("Rosa");
 
+		
 			System.out.println(robo);
 			UI.arena(robo);
 
@@ -22,13 +23,7 @@ public class Program {
 			robo.moverRobor("Right");
 			robo.moverRobor("Right");
 			robo.moverRobor("Right");
-			
-			robo.moverRobor("DOWN");
-			robo.moverRobor("LEFT");
-			
-			
-			
-			
+		
 			System.out.println();
 			
 			UI.arena(robo);
