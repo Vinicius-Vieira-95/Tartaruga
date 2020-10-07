@@ -33,16 +33,16 @@ public class Robo {
 	
 	public void moverRobor(String comando) throws MovimentoInvalidoException {
 		
-		if(comando.equalsIgnoreCase("UP")) {
+		if(comando.equalsIgnoreCase("RIGHT")) {
 			this.posicaoY =  posicaoY + 1; 
 		}
-		if(comando.equalsIgnoreCase("DOWN")) {
+		if(comando.equalsIgnoreCase("LEFT")) {
 			this.posicaoY = posicaoY -1;
 		}
-		if(comando.equalsIgnoreCase("RIGHT")) {
+		if(comando.equalsIgnoreCase("DOWN")) {
 			this.posicaoX = posicaoX + 1;
 		}
-		if(comando.equalsIgnoreCase("LEFT")) {
+		if(comando.equalsIgnoreCase("UP")) {
 			this.posicaoX = posicaoX -1;
 		}
 		if(posicaoX < 0 || posicaoX > 10 || posicaoY < 0 || posicaoY > 10) {

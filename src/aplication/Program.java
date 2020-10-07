@@ -11,17 +11,22 @@ public class Program {
 			System.out.println(robo);
 			UI.arena(robo);
 
+			robo.moverRobor("DOWN");
+			robo.moverRobor("DOWN");
+			robo.moverRobor("DOWN");
+			
 			robo.moverRobor("UP");
 			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
-			robo.moverRobor("UP");
+			
+
+			robo.moverRobor("Right");
+			robo.moverRobor("Right");
+			robo.moverRobor("Right");
+			
+			robo.moverRobor("DOWN");
+			robo.moverRobor("LEFT");
+			
+			
 			
 			
 			System.out.println();
