@@ -1,9 +1,13 @@
 package aplication;
 
+import personagem.Robo;
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Robo robo = new Robo("ROsa");
+		System.out.println(robo);
 
 	}
 
