@@ -31,7 +31,7 @@ public class Robo {
 		return "Cor: " + cor + " :" + posicaoX + ":" + posicaoY;
 	}
 
-	public void moverRobor(String comando) throws MovimentoInvalidoException {
+	public void moverRobo(String comando) throws MovimentoInvalidoException {
 
 		if (comando.equalsIgnoreCase("RIGHT")) {
 			this.posicaoY = posicaoY + 1;
@@ -50,6 +50,30 @@ public class Robo {
 		}
 
 	}
+	
+	public void moverRobo(int comando) throws MovimentoInvalidoException {
+		
+		if (comando == 1) {
+			this.posicaoX = posicaoX - 1;
+		}
+		if (comando == 2) {
+			this.posicaoX = posicaoX + 1;
+		}
+		if (comando == 3) {
+			this.posicaoY = posicaoY - 1;
+		}
+		if (comando == 4) {
+			this.posicaoY = posicaoY + 1;
+		}
+		if (posicaoX < 0 || posicaoX > 10 || posicaoY < 0 || posicaoY > 10) {
+			this.posicaoX = 0;
+			this.posicaoY = 0;
+			throw new MovimentoInvalidoException("Personagem fora do campo da arena");
+		}
+		
+		
+	}
+	
 
 	public boolean posicaoDoAlimento(int x, int y) {
 		if (posicaoX == x && posicaoY == y) {

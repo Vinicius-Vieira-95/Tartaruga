@@ -9,6 +9,8 @@ public class Program {
 	public static void main(String[] args) {
 
 		Robo robo = new Robo("Rosa");
+		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);		
 		
 		System.out.println("Comando do robo");
@@ -28,24 +30,21 @@ public class Program {
 			int n = scan.nextInt();
 			
 			if(n == 1) {
-				robo.moverRobor("UP");
+				robo.moverRobo("UP");
 			}
 			else if( n == 2) {
-				robo.moverRobor("DOWN");
+				robo.moverRobo("DOWN");
 			}
 			else if( n == 3) {
-				robo.moverRobor("RIGHT");
+				robo.moverRobo("RIGHT");
 			}
 			else if(n == 4) {
-				robo.moverRobor("LEFT");
+				robo.moverRobo("LEFT");
 			}
 			
 			System.out.println(robo);
 			System.out.println();
 			
 		}
-		
-		
 	}
-
 }
