@@ -4,8 +4,8 @@ import exception.MovimentoInvalidoException;
 
 public class Robo {
 
-	private int posicaoX;
-	private int posicaoY;
+	protected int posicaoX;
+	protected int posicaoY;
 	private String cor;
 
 	public Robo(String cor) {
